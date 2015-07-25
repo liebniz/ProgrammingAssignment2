@@ -1,6 +1,5 @@
-## The following functions caclulate the inverse of a matrix and cache the results using R scoping rules 
-## The intent is to perform the expensive invers operation once per matrix inverted
-## functions do
+## The following functions calculate the inverse of a matrix and cache the results using R scoping rules 
+## The intent is to perform the expensive inverse operation once per matrix inverted
 
 ## Example 
 ## A <- matrix( c(2, 4, 3, 1, 5, 7), nrow=2,ncol=3, byrow = TRUE)
@@ -9,8 +8,7 @@
 ## INV <- cacheSolve(cachedMatrix) # first call
 
 ## INV <-cacheSolve(cachedMatrix) # second call returns cached result from previous call
-## "getting cached data"
-
+## results in "getting cached data" printed
 
 ## Create a function that calulates the inverse of a matrix
 makeCacheMatrix <- function(x = matrix()) {
